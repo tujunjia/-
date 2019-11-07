@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>首页</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="canonical" href=""/>
+  <meta name="applicable-device" content="mobile">
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="dist/css/swiper.min.css">
+  <link rel="stylesheet" href="css/indexpage.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="dist/js/swiper.min.js"></script>
+  <script src="js/indexpage.js"></script>
+  <script src="js/pc.js"></script>
+  <script>
+    function pgScale(){
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+    pgScale();
+    window.onresize=pgScale;
+  </script> 
+  <script type="text/javascript">
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      var bIsWX = sUserAgent.match(/MicroMessenger/i) == 'micromessenger';
+      if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM ||bIsWX ) {
+        
+      }else{
+        //window.location.href = '';
+      }
+    }
+    browserRedirect();
+  </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d3cf1bc1898c05657ba8faed1b8b4452";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <!-- <script language="javascript" src="http://e.kaoyan365.cn/public/kaoyan/js/bdtop.js"></script> -->
+</head>
+<body>
+  <div class="download">
+    <div class="d_tip">
+      下载APP<br>全面支持在线学习，离线下载
+    </div>
+    <a href="javascript:;" class="dl_app">下载APP</a>
+  </div>
+  <!-- banner begin -->
+  <div class="banner">
+    <div class="banner_top">
+      <!-- Swiper -->
+    <div class="swiper-container banner_swiper_container" id="banner_swiper-container">
+      <div class="swiper-wrapper banner_swiper_wrapper">
+        <div class="swiper-slide banner_swiper_slide"><img src="./images/sybanner.png" alt=""></div>
+        <div class="swiper-slide banner_swiper_slide"><img src="./images/sybanner.png" alt=""></div>
+        <div class="swiper-slide banner_swiper_slide"><img src="./images/sybanner.png" alt=""></div>
+        <div class="swiper-slide banner_swiper_slide"><img src="./images/sybanner.png" alt=""></div>
+        <div class="swiper-slide banner_swiper_slide"><img src="./images/sybanner.png" alt=""></div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination banner_swiper_pagination"></div>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('#banner_swiper-container', {
+        initialSlide: 1,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        freeMode: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        loop:true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    </div>
+    <div class="banner_botoom">
+
+    </div>
+    <!-- Navigation begin -->
+    <div class="Navigation">
+      <div class="Navigation_content">
+        <img class="Navigation_content_img Navigation_content_img1" src="./images/sycdh.png" alt="">
+        <div  class="Navigation_content_text">中公考研网校</div>
+        <img class="Navigation_content_img Navigation_content_img2" src="./images/syss.png" alt="">
+        <img class="Navigation_content_img Navigation_content_img3" src="./images/syswd.png" alt="">
+      </div>
+    </div>
+    <!-- Navigation end -->
+    <!-- card begin -->
+    <div class="swiper-container banner_card_swiper_container" id="banner_card_swiper-container">
+      <div class="swiper-wrapper banner_swiper_wrapper">
+        <div class="swiper-slide banner_card_swiper_slide">
+            <div class="banner_card">
+              <div class="banner_card_item banner_card_item1">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon0.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">在职考研</div>
+              </div>
+              <div class="banner_card_item banner_card_item2">
+                <img class="b_c_i_img b_c_i_img2" src="./images/cardicon1.png" alt="">
+                <div class="b_c_i_text b_c_i_text2">在校考研</div>
+              </div>
+              <div class="banner_card_item banner_card_item3">
+                <img class="b_c_i_img b_c_i_img3" src="./images/cardicon2.png" alt="">
+                <div class="b_c_i_text b_c_i_text3">直播课堂</div>
+              </div>
+              <div class="banner_card_item banner_card_item4">
+                <img class="b_c_i_img b_c_i_img4" src="./images/cardicon3.png" alt="">
+                <div class="b_c_i_text b_c_i_text4">在线模考</div>
+              </div>
+              <div class="banner_card_item banner_card_item5">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon4.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">新大纲课程</div>
+              </div>
+              <div class="banner_card_item banner_card_item6">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon6.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">轻松学图书</div>
+              </div>
+              <div class="banner_card_item banner_card_item7">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon7.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">学习资料</div>
+              </div>
+              <div class="banner_card_item banner_card_item8">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon8.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">专业课</div>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-slide banner_card_swiper_slide">
+            <div class="banner_card">
+              <div class="banner_card_item banner_card_item1">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon0.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">在职考研</div>
+              </div>
+              <div class="banner_card_item banner_card_item2">
+                <img class="b_c_i_img b_c_i_img2" src="./images/cardicon1.png" alt="">
+                <div class="b_c_i_text b_c_i_text2">在校考研</div>
+              </div>
+              <div class="banner_card_item banner_card_item3">
+                <img class="b_c_i_img b_c_i_img3" src="./images/cardicon2.png" alt="">
+                <div class="b_c_i_text b_c_i_text3">直播课堂</div>
+              </div>
+              <div class="banner_card_item banner_card_item4">
+                <img class="b_c_i_img b_c_i_img4" src="./images/cardicon3.png" alt="">
+                <div class="b_c_i_text b_c_i_text4">在线模考</div>
+              </div>
+              <div class="banner_card_item banner_card_item5">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon4.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">新大纲课程</div>
+              </div>
+              <div class="banner_card_item banner_card_item6">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon6.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">轻松学图书</div>
+              </div>
+              <div class="banner_card_item banner_card_item7">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon7.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">学习资料</div>
+              </div>
+              <div class="banner_card_item banner_card_item8">
+                <img class="b_c_i_img b_c_i_img1" src="./images/cardicon8.png" alt="">
+                <div class="b_c_i_text b_c_i_text1">专业课</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination banner_card_swiper_pagination"></div>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('#banner_card_swiper-container', {
+          pagination: {
+            el: '.banner_card_swiper_pagination',
+          },
+        });
+      </script>
+    <!-- card end -->
+  </div>
+  <!-- banner end -->
+
+  <!-- index_title begin -->
+  <div class="index_title index_title1">
+    <div class="index_title_content">
+      <div class="index_title_content_item1">免费直播中心</div>
+      <div class="index_title_content_item2"><a href="javascript:;">全部>></a></div>
+    </div>
+  </div>
+  <!-- index_title end -->
+  <!-- liveCenter begin -->
+  <div class="liveCenter">
+    <div class="liveCenter_card">
+      <div class="liveCenter_card_tl">
+        <img src="./images/syzbz.png" alt="">直播中
+      </div>
+      <div class="liveCenter_card_tr1"><span class="s1">冲刺必备数学技巧必杀技</span><span class="s2">讲师：李擂</span></div>
+      <div class="line1"></div>
+      <a href="javascript:;"><span class="liveCenter_card_tr2">立即进入</span></a>
+    </div>
+    <div class="liveCenter_bottom">
+      <div class="liveCenter_bottom_left">
+        <span class="s1">结束时间：</span>2019/7/23 22:00
+      </div>
+      <div class="liveCenter_bottom_right">
+        <span class="s1"><img src="./images/syzxrs.png" alt="">3000人在线</span>
+        <span class="s2"><img src="./images/liuyan.png" alt="">2345人留言</span>
+      </div>
+    </div>
+  </div>
+  <!-- liveCenter end -->
+  <!-- Live Playback begin -->
+  <div class="livePlayback">
+    <div class="livePlayback_item_father">
+      <div class="livePlayback_item livePlayback_item1">
+      <div class="livePlayback_item1_card">
+          <div class="livePlayback_item1_card_tl">
+              <img src="./images/xiaoxi.png" alt="">即将开始
+            </div>
+            <div class="livePlayback_item1_card_tr1">
+              <span class="s1">冲刺必备数学技巧必杀技</span>
+              <span class="s2"><img src="./images/sybff.png" alt=""></span>
+            </div>
+            <div class="livePlayback_item1_card_line2"></div>
+            <span class="livePlayback_item1_cards_tr2">讲师：李擂</span>
+      </div>
+    </div>
+    <div class="livePlayback_item1_text"><span class="s1">开始时间：2019/8/23 20:00</span><span class="s2"></span></div>
+    </div>
+    
+    <div class="livePlayback_item_father">
+      <div class="livePlayback_item livePlayback_item2">
+      <div class="livePlayback_item2_card">
+          <div class="livePlayback_item2_card_tl">
+              <img src="./images/syzbhf.png" alt="">直播回放
+            </div>
+            <div class="livePlayback_item2_card_tr1">
+              <span class="s1">冲刺必备数学技巧必杀技</span>
+              <span class="s2"><img src="./images/sybfl.png" alt=""></span>
+            </div>
+            <div class="livePlayback_item2_card_line2"></div>
+            <span class="livePlayback_item2_cards_tr2">讲师：李擂</span>
+      </div>
+    </div>
+    <div class="livePlayback_item2_text"><img src="./images/yangjing.png" alt=""><span class="s1">345人看过</span></div>
+    </div>
+    
+  </div>
+  <!-- Live Playback end -->
+  <!-- index_title2 begin-->
+  <div class="index_title2">选择自己的目标专业></div>
+  <!-- index_title2 end -->
+  <!-- index_title begin -->
+  <div class="index_title index_title1">
+    <div class="index_title_content">
+      <div class="index_title_content_item1">考研公共课</div>
+      <div class="index_title_content_item2"><a href="javascript:;">全部>></a></div>
+    </div>
+  </div>
+  <!-- index_title end -->
+  <!-- Public Courses begin -->
+   <!-- Swiper -->
+   <div class=" swiper-container publicCourses_swiper-container" id="publicCourses_swiper_container">
+    <div class="swiper-wrapper  publicCourses_swiper_wrapper">
+      <div class="swiper-slide publicCourses_swiper_slide">
+        <div class="publicCourses publicCourses1">
+          <div class="publicCourses_card">
+            <div class="publicCourses_card_tl">秒杀</div>
+            <div class="publicCourses_card_tr0">
+              <div class="publicCourses_card_tr1">考研英语</div>
+              <div class="publicCourses_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="publicCourses_text">
+            <div class="publicCourses_text_tr1">考研英语VIP重点讲解</div>
+            <div class="publicCourses_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide publicCourses_swiper_slide">
+        <div class="publicCourses publicCourses2">
+          <div class="publicCourses_card">
+            <div class="publicCourses_card_tl">秒杀</div>
+            <div class="publicCourses_card_tr0">
+              <div class="publicCourses_card_tr1">考研政治</div>
+              <div class="publicCourses_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="publicCourses_text">
+            <div class="publicCourses_text_tr1">考研政治VIP重点讲解</div>
+            <div class="publicCourses_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide publicCourses_swiper_slide">
+        <div class="publicCourses publicCourses3">
+          <div class="publicCourses_card">
+            <div class="publicCourses_card_tl">秒杀</div>
+            <div class="publicCourses_card_tr0">
+              <div class="publicCourses_card_tr1">考研英语</div>
+              <div class="publicCourses_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="publicCourses_text">
+            <div class="publicCourses_text_tr1">考研英语VIP重点讲解</div>
+            <div class="publicCourses_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide publicCourses_swiper_slide">
+        <div class="publicCourses publicCourses4">
+          <div class="publicCourses_card">
+            <div class="publicCourses_card_tl">秒杀</div>
+            <div class="publicCourses_card_tr0">
+              <div class="publicCourses_card_tr1">考研英语</div>
+              <div class="publicCourses_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="publicCourses_text">
+            <div class="publicCourses_text_tr1">考研英语VIP重点讲解</div>
+            <div class="publicCourses_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('#publicCourses_swiper_container', {
+      initialSlide: 1,
+      slidesPerView: 2,
+      spaceBetween: 0,
+      freeMode: true,
+      pagination: {
+        // el: '.swiper-pagination',
+        // clickable: true,
+      },
+      loop:true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <!-- Public Courses end -->
+  <!-- margin-top begin  f5f5f5 -->
+  <div class="margin_top"></div>
+  <!-- margin-top end f5f5f5 -->
+  <!-- index_title begin -->
+  <div class="index_title index_title1 management_title">
+    <div class="index_title_content">
+      <div class="index_title_content_item1">管理类联考</div>
+      <div class="index_title_content_item2"><a href="javascript:;">全部>></a></div>
+    </div>
+  </div>
+  <!-- index_title end -->
+  <!-- Management begin -->
+   <!-- Swiper -->
+   <div class=" swiper-container management_swiper-container" id="management_swiper_container">
+    <div class="swiper-wrapper  management_swiper_wrapper">
+      <div class="swiper-slide management_swiper_slide">
+        <div class="management management1">
+          <div class="management_card">
+            <div class="management_card_tl">秒杀</div>
+            <div class="management_card_tr0">
+              <div class="management_card_tr1">考研英语</div>
+              <div class="management_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="management_text">
+            <div class="management_text_tr1">考研英语VIP重点讲解</div>
+            <div class="management_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide management_swiper_slide">
+        <div class="management management2">
+          <div class="management_card">
+            <div class="management_card_tl">秒杀</div>
+            <div class="management_card_tr0">
+              <div class="management_card_tr1">考研政治</div>
+              <div class="management_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="management_text">
+            <div class="management_text_tr1">考研政治VIP重点讲解</div>
+            <div class="management_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide management_swiper_slide">
+        <div class="management management3">
+          <div class="management_card">
+            <div class="management_card_tl">秒杀</div>
+            <div class="management_card_tr0">
+              <div class="management_card_tr1">考研英语</div>
+              <div class="management_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="management_text">
+            <div class="management_text_tr1">考研英语VIP重点讲解</div>
+            <div class="management_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide management_swiper_slide">
+        <div class="management management4">
+          <div class="management_card">
+            <div class="management_card_tl">秒杀</div>
+            <div class="management_card_tr0">
+              <div class="management_card_tr1">考研英语</div>
+              <div class="management_card_tr2">全程精讲班</div>
+            </div>
+          </div>
+          <div class="management_text">
+            <div class="management_text_tr1">考研英语VIP重点讲解</div>
+            <div class="management_text_tr2">
+              <span class="s1">优惠:¥1999</span>
+              <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('#management_swiper_container', {
+      initialSlide: 1,
+      slidesPerView: 2,
+      spaceBetween: 0,
+      freeMode: true,
+      pagination: {
+        // el: '.swiper-pagination',
+        // clickable: true,
+      },
+      loop:true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <!-- Management end -->
+  <!-- margin-top begin  f5f5f5 -->
+  <div class="margin_top"></div>
+  <!-- margin-top end f5f5f5 -->
+  <!-- scroll text begin -->
+  <div class="scrolltextfather">
+    <div class="scrolltext">
+      <div class="scrolltext_item scrolltext_item1">考研专业课</div>
+      <div class="scrolltext_item scrolltext_item2">工学</div>
+      <div class="scrolltext_item scrolltext_item3">管理学</div>
+      <div class="scrolltext_item scrolltext_item4">教育学</div>
+      <div class="scrolltext_item scrolltext_item5">法学</div>
+      <div class="scrolltext_item scrolltext_item6">文学</div>
+      <div class="scrolltext_item scrolltext_item7">经济学</div>
+      <div class="scrolltext_item scrolltext_item8">教育学</div>
+      <div class="scrolltext_item scrolltext_item9">文学</div>
+      <div class="scrolltext_item scrolltext_item10">法学</div>
+      <div class="scrolltext_item scrolltext_item11">计算机</div>
+      <div class="scrolltext_item scrolltext_item12">医学</div>
+      <div class="scrolltext_item scrolltext_item13">艺术学体育学</div>
+    </div>
+  </div>
+  <!-- scroll text end -->
+  <!-- scrolltext_cours bengin -->
+  <div class="scrolltext_cours">
+    <div class="scrolltext_cours_item scrolltext_cours_item1">
+      <div class="scrolltext_cours_item_img"><img src="./images/syzyzh.png" alt=""></div>
+      <div class="scrolltext_cours_item_tr1">西医综合VIP重点讲解</div>
+      <div class="scrolltext_cours_item_tr2">
+        <span class="s1">优惠:¥1999</span>
+        <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+      </div>
+    </div>
+    <div class="scrolltext_cours_item scrolltext_cours_item2">
+      <div class="scrolltext_cours_item_img"><img src="./images/syjsjt.png" alt=""></div>
+      <div class="scrolltext_cours_item_tr1">计算机VIP重点讲解</div>
+      <div class="scrolltext_cours_item_tr2">
+        <span class="s1">优惠:¥1999</span>
+        <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+      </div>
+    </div>
+    <div class="scrolltext_cours_item scrolltext_cours_item2">
+      <div class="scrolltext_cours_item_img"><img src="./images/syzyzht.png" alt=""></div>
+      <div class="scrolltext_cours_item_tr1">中医综合VIP重点讲解</div>
+      <div class="scrolltext_cours_item_tr2">
+        <span class="s1">优惠:¥1999</span>
+        <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+      </div>
+    </div>
+    <div class="scrolltext_cours_item scrolltext_cours_item2">
+      <div class="scrolltext_cours_item_img"><img src="./images/syjyxt.png" alt=""></div>
+      <div class="scrolltext_cours_item_tr1">教育学VIP重点讲解</div>
+      <div class="scrolltext_cours_item_tr2">
+        <span class="s1">优惠:¥1999</span>
+        <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+      </div>
+    </div>
+  </div>
+  <!-- scrolltext_cours end -->
+   <!-- margin-top begin  f5f5f5 -->
+   <div class="margin_top"></div>
+   <!-- margin-top end f5f5f5 -->
+   <!-- index_title begin -->
+   <div class="index_title index_title1 examination_title">
+     <div class="index_title_content">
+       <div class="index_title_content_item1">复试调剂</div>
+       <div class="index_title_content_item2"><a href="javascript:;">全部>></a></div>
+     </div>
+   </div>
+   <!-- index_title end -->
+   <!-- examination begin -->
+   <div class="examination">
+      <div class="examination_cours_item examination_cours_item1">
+        <div class="examination_cours_item_img"><img src="./images/symst.png" alt=""></div>
+        <div class="examination_cours_item_tr1">面试VIP重点讲解</div>
+        <div class="examination_cours_item_tr2">
+          <span class="s1">优惠:¥1999</span>
+          <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+        </div>
+      </div>
+      <div class="examination_cours_item examination_cours_item2">
+        <div class="examination_cours_item_img"><img src="./images/syfst.png" alt=""></div>
+        <div class="examination_cours_item_tr1">复试VIP重点讲解</div>
+        <div class="examination_cours_item_tr2">
+          <span class="s1">优惠:¥1999</span>
+          <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+        </div>
+      </div>
+   </div>
+   <!-- examination end -->
+  <!-- margin-top begin  f5f5f5 -->
+  <div class="margin_top"></div>
+  <!-- margin-top end f5f5f5 -->
+  <!-- index_title begin -->
+  <div class="index_title index_title1 miantui_title">
+    <div class="index_title_content">
+      <div class="index_title_content_item1">保研免推生</div>
+      <div class="index_title_content_item2"><a href="javascript:;">全部>></a></div>
+    </div>
+  </div>
+  <!-- index_title end -->
+  <!-- 免推生 begin -->
+  <div class="miantui">
+    <a href="javascript:;"><div class="miantui_item miantui_item1"><img src="./images/miantui1.png" alt=""></div></a>
+    <a href="javascript:;"><div class="miantui_item miantui_item2"><img src="./images/miantui2.png" alt=""></div></a>
+    <a href="javascript:;"><div class="miantui_item miantui_item3"><img src="./images/miantui3.png" alt=""></div></a>
+    <a href="javascript:;"><div class="miantui_item miantui_item4"><img src="./images/miantui4.png" alt=""></div></a>
+  </div>
+  <!-- 免推生 end -->
+  <!-- margin-top begin  f5f5f5 -->
+  <div class="margin_top"></div>
+  <!-- margin-top end f5f5f5 -->
+  <!-- index_title begin -->
+  <div class="index_title index_title1 miantui_title">
+    <div class="index_title_content">
+      <div class="index_title_content_item1">四六级</div>
+      <div class="index_title_content_item2"><a href="javascript:;">全部>></a></div>
+    </div>
+  </div>
+  <!-- index_title end -->
+  <!-- Level 46 begin -->
+  <div class="level46">
+    <div class="level46_item level46_item1">
+      <a href="javascript:;"><div class="level46_item_img"><img src="./images/sysjt.png" alt=""></div></a>
+      <div class="level46_item_tr1">VIP四级重点讲解</div>
+      <div class="level46_item_tr2">
+        <span class="s1">优惠:¥1999</span>
+        <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+      </div>
+    </div>
+    <div class="level46_item level46_item2">
+      <a href="javascript:;"><div class="level46_item_img"><img src="./images/yingyu46.png" alt=""></div></a>
+      <div class="level46_item_tr1">VIP四级重点讲解</div>
+      <div class="level46_item_tr2">
+        <span class="s1">优惠:¥1999</span>
+        <span class="s2"><img src="./images/syzxgkrs.png" alt=""> 234</span>
+      </div>
+    </div>
+  </div>
+  <!-- Level 46 end -->
+  <!-- margin-top begin  f5f5f5 -->
+  <div class="margin_top"></div>
+  <!-- margin-top end f5f5f5 -->
+  <!-- teacher title begin -->
+  <div class="teacher_title">师资团队</div>
+  <!-- teacher title end -->
+  <!-- Swiper -->
+  <div class="swiper-container teacher_swiper_container" id="teacher_swiper_container">
+    <div class="swiper-wrapper teacher_swiper_wrapper">
+      <div class="swiper-slide teacher_swiper_slide">
+        <div class="teacher_swiper_slide_item"><img src="./images/sysztd.png" alt=""></div>
+      </div>
+      <div class="swiper-slide teacher_swiper_slide">
+        <div class="teacher_swiper_slide_item"><img src="./images/sysztd1.png" alt=""></div>
+      </div>
+      <div class="swiper-slide teacher_swiper_slide">
+        <div class="teacher_swiper_slide_item"><img src="./images/sysztd2.png" alt=""></div>
+      </div>
+      <div class="swiper-slide teacher_swiper_slide">
+        <div class="teacher_swiper_slide_item"><img src="./images/sysztd3.png" alt=""></div>
+      </div>
+      <div class="swiper-slide teacher_swiper_slide">
+        <div class="teacher_swiper_slide_item"><img src="./images/sysztd2.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('#teacher_swiper_container', {
+      centeredSlides: false, // 选中slide居中显示
+      initialSlide: 2, // 默认选中项索引
+      slidesPerView: 1, // 自动匹配每次显示的slide个数,loop='auto'模式下，还需要设置loopedSlides
+      effect: 'coverflow', // 切换效果-3d
+      coverflowEffect: {
+      rotate: 0,
+      stretch: 150,
+      depth: 175,
+      modifier: 2,
+      slideShadows: true
+      },
+    //  loop: true,
+    });
+  </script>
+  <!-- easybook title begin -->
+  <div class="teacher_title">轻松学图书</div>
+  <!-- easybook title end -->
+   <!-- Swiper -->
+   <div class=" swiper-container easybook_swiper_container" id="easybook_swiper_container">
+    <div class="swiper-wrapper  easybook_swiper_wrapper">
+      <div class="swiper-slide easybook_swiper_slide">
+        <div class="easybook easybook1">
+          <div class="easybook_img"><img src="./images/syqsx.png" alt=""></div>
+          <div class="easybook_text1">限时价格：￥44</div>
+          <div class="easybook_text2">原价：￥88.00</div>
+        </div>
+      </div>
+      <div class="swiper-slide easybook_swiper_slide">
+        <div class="easybook easybook2">
+          <div class="easybook_img"><img src="./images/syqsx.png" alt=""></div>
+          <div class="easybook_text1">限时价格：￥44</div>
+          <div class="easybook_text2">原价：￥88.00</div>
+        </div>
+      </div>
+      <div class="swiper-slide easybook_swiper_slide">
+        <div class="easybook easybook3">
+          <div class="easybook_img"><img src="./images/syqsx.png" alt=""></div>
+          <div class="easybook_text1">限时价格：￥44</div>
+          <div class="easybook_text2">原价：￥88.00</div>
+        </div>
+      </div>
+      <div class="swiper-slide easybook_swiper_slide">
+        <div class="easybook easybook4">
+          <div class="easybook_img"><img src="./images/syqsx.png" alt=""></div>
+          <div class="easybook_text1">限时价格：￥44</div>
+          <div class="easybook_text2">原价：￥88.00</div>
+        </div>
+      </div>
+      <div class="swiper-slide easybook_swiper_slide">
+        <div class="easybook easybook4">
+          <div class="easybook_img"><img src="./images/syqsx.png" alt=""></div>
+          <div class="easybook_text1">限时价格：￥44</div>
+          <div class="easybook_text2">原价：￥88.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('#easybook_swiper_container', {
+      initialSlide: 1,
+      slidesPerView: 3,
+      spaceBetween: 0,
+      freeMode: true,
+      pagination: {
+        // el: '.swiper-pagination',
+        // clickable: true,
+      },
+      loop:true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <!-- margin-top begin  f5f5f5 -->
+  <div class="margin_top"></div>
+  <!-- margin-top end f5f5f5 -->
+  <!-- 高分分享 title begin -->
+  <div class="teacher_title">高分学员分享</div>
+  <!-- 高分分享 title end -->
+  <!-- Participant Sharing begin -->
+  <div class="participantSharing">
+    <div class="participantSharing_item participantSharing_item1"><img src="./images/sygfxyfx.png" alt=""></div>
+    <div class="participantSharing_item participantSharing_item2"><img src="./images/sygfxyfx.png" alt=""></div>
+    <div class="participantSharing_item participantSharing_item3"><img src="./images/sygfxyfx.png" alt=""></div>
+    <div class="participantSharing_item participantSharing_item4"><img src="./images/sygfxyfx.png" alt=""></div>
+    <div class="participantSharing_item participantSharing_item5"><img src="./images/sygfxyfx.png" alt=""></div>
+    <div class="participantSharing_item participantSharing_item6"><img src="./images/sygfxyfx.png" alt=""></div>
+  </div>
+  <!-- Participant Sharing end -->
+
+
+  <!-- footer begin -->
+  <div class="T_footer">
+    <div class="T_footer_tr">中公考研网校 | 网站地图 | 电脑版 </div>
+    <div class="T_footer_tr">Copyrights©️1999-2019 北京中公教育科技有限公司</div>
+    <div class="T_footer_tr">All Rights Reserved 京ICP证161188号</div>
+
+  </div>
+  <!-- footer end -->
+  <!-- footer tel begin -->
+  <div class="T_footertel">
+    <div class="T_footertel_left"><img src="./images/sydh.png" alt="">010-60957395</div>
+    <div class="T_footertel_right"><img src="./images/syzx.png" alt="">立即咨询</div>
+  </div>
+  <!-- footer tel end-->
+
+  <!-- 注册弹窗 begin -->
+  <div class="register_mask">
+    <div class="register">
+      <div class="register_input">
+        <div class="register_input_index">
+          <div class="register_input_text1">• 免费领取 1对1  择校择专业服务</div>
+          <div class="register_input_text2">• 价值￥599+ 英语词汇课+免费直播课程</div>
+          <div class="register_input_input register_input_input_1">
+            <input class="register_input_input1" type="text" name="phone" id="phone" placeholder="输入手机号领取红包">
+          </div>
+          <div class="register_input_input register_input_input_2">
+            <input class="register_input_input2" type="text" name="verificationCode" id="verificationCode" placeholder="请输入验证码">
+            <div class="verificationCode_button" id="verificationCode_button">获取验证码</div>
+          </div>
+        </div>
+      </div>
+      <div class="register_button">领取红包</div>
+      <div class="register_close"><img id="register_close" src="./images/closewechat.png" alt=""></div>
+    </div>
+  </div>
+  <!-- 注册弹窗 end -->
+  <!-- <script type="text/javascript"> 
+    var NTKF_PARAM ={
+      "siteid":"kf_10176" /*网站siteid*/,
+      "settingid":"kf_10176_1545025622120" /*代码ID*/,
+      "uid":"" /*会员ID*/,
+      "uname":""/*会员名*/,
+      "userlevel": "0"/*会员等级*/}
+  </script>
+  <script>
+    window.onload = function(){
+      var mobile = /mobile|android|linux/i.test(navigator.userAgent.toLowerCase());
+      if (!mobile) {
+        NTKF.im_openInPageChat();
+      }
+    }
+  </script>
+  <script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_10176" charset="utf-8"></script> -->
+  <!-- <script language="javascript" src="http://e.kaoyan365.cn/public/kaoyan/js/bdbot.js"></script> -->
+  <script language="javascript" src="http://www.kaoyan365.cn/statics/js/kaoyanbd.js"></script>
+</body>
+</html>

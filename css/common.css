@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document Edited by 木易 */
+*{margin:0;padding:0;outline:none;list-style:none;text-decoration:none;box-sizing: border-box; }
+body,html {color:#333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;max-width:720px;background: #FFFFFF;font-family: '微软雅黑';position: relative;font-size: .18rem;margin: 0 auto;}
+body{overflow-x: hidden;}
+img {border:none;max-width: 100%;width: auto\9;height: auto;-ms-interpolation-mode: bicubic;_width:auto;  }
+input, textarea ,select{border:none;background:none;cursor:pointer;font-size:14px;vertical-align:middle;color:#333; font-family:'微软雅黑';}
+select {border:inherit;background: inherit; }
+a {text-decoration:none;color:#333; }
+em, i {font-style:normal;  }
+a:focus, input, select {outline:none;  }
+.clearfix {*zoom:1; clear: both; }
+.clearfix:after {content:"\200B"; display: block;clear: both;height: 0;  }
+input[type="submit"], input[type="reset"], input[type="button"], button, select {-webkit-appearance: none;  }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{ font-weight: normal; padding: 0; margin: 0; font-size: 14px; line-height: 1.4;  font-family:'FZLTHJW';}
+p,ul, ol{ margin: 0;}
+.clearfix {*zoom:1;}
+.clearfix:after{content:"";display: block;height: 0;clear: both;visibility: hidden;}
+.fl{float: left;}
+.fr{float: right;}
+/**  公共样式  END   **/
+
+
+/* download APP */
+.download {
+  width: 100%;
+  height: 1rem;
+  background: #ed4248;
+  padding: 0 .3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.download .d_tip {
+  color: #fff;
+  font-size: .26rem;
+  line-height: .37rem;
+}
+.download .dl_app {
+  width: 1.8rem;
+  height: .6rem;
+  background: #fff;
+  font-size: .26rem;
+  color: #ed4248;
+  text-align: center;
+  line-height: .6rem;
+}
+.dl_box {
+  width: 100%;
+  height: 1rem;
+}
+
+.lt_pos {
+  width: 100%;
+  height: 1.08rem;
+}
+.lo_tit {
+  background: #fff;
+  position: fixed;
+  top: 1rem;
+  z-index: 9999;
+  width: 100%;
+  height: 1.08rem;
+  box-shadow: 0 0 .1rem #ccc;
+  line-height: 1.08rem;
+  text-align: center;
+  font-size: .36rem;
+  color: #000;
+}
+.lo_tit .back {
+  width: .24rem;
+  height: .4rem;
+  position: absolute;
+  left: .29rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: url(../images/back.png) no-repeat;
+  background-size: 100% 100%;
+}
+.lo_tit .search {
+  width: .4rem;
+  height: .4rem;
+  position: absolute;
+  right: .9rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: url(../images/zbss.png) no-repeat;
+  background-size: 100% 100%;
+}
+.lo_tit .nav {
+  width: .4rem;
+  height: .33rem;
+  position: absolute;
+  right: .3rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: url(../images/kczxcdh.png) no-repeat;
+  background-size: 100% 100%;
+}
